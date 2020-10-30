@@ -5,11 +5,11 @@ For a modern Java code formatting style
 For a modern Java code formatting style
 Let's be clear, this manifesto is for advocating a Java formatting style opposing K&R C inventors advocated by [google](https://google.github.io/styleguide/javaguide.html).
 
-K&R did not fully realized the impact of introducing typographic block delimiters: {, (, [.
+When comparing to the existing languages at that time (PASCAL, COBOL, ADA...), K&R did not fully took advantage of their newly introduced typographic block delimiters: '{' and '}'.
 
-Java evolutions with anonymous classes, functional interfaces, lambdas... makes old style formatting completely outdated
+Java evolutions with anonymous classes, functional interfaces, lambdas... makes this even more obvious: old style formatting became definitely outdated.
 
-Let' s look at the first examples showing at google guide just mentioned:
+Let' s look at the first formatting examples from google guide we just mentioned above:
 
 ```java
 return new MyClass() {
@@ -28,7 +28,7 @@ return new MyClass() {
   }
 };
 ```
-The proposed new formatting rules will result in a much higher readability:
+The proposed new formatting rules will result in a much better code organization perception:
 
 ```java
 return new MyClass() 
@@ -57,7 +57,7 @@ return new MyClass()
     }
 };
 ```
-but will also allow a compact format:
+And will also allow its equivalent compact format:
 
 ```java
 return new MyClass() 
@@ -74,4 +74,4 @@ return new MyClass()
     }
 };
 ```
-which is still much more readable in terms of code structures organization immediate perception.
+which is still much more readable in terms of catching code structures at first glance.
