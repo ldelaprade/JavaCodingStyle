@@ -2,4 +2,10 @@
 For a modern Java code formatting style
 
 ### [Introduction](Introduction.md)
-### [Principles](Principles.md)
+#### [Rational](Rational.md)
+##### [Simple constructs](SimpleConstructs.md)
+##### [functions](functions.md)
+##### [switch/case](SwitchCase.md)
+
+
+
