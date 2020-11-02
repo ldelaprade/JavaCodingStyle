@@ -7,7 +7,7 @@
 ```java
 public interface SQLTableInterface
 {
-	...
+    ...
 }
 ```
 Breaking long lines need no indentations. For example:
@@ -15,10 +15,10 @@ Breaking long lines need no indentations. For example:
 ```java
 public class DualTable extends OracleSpec implements SQLTableInterface
 {
-	public DualTable() 
-	{
-		...
-	}
+    public DualTable() 
+    {
+        ...
+    }
     ...
 }
 ```
@@ -29,10 +29,10 @@ public class DualTable
 extends OracleSpec 
 implements SQLTableInterface
 {
-	public DualTable() 
-	{
-		...
-	}
+    public DualTable() 
+    {
+        ...
+    }
     ...
 }
 
@@ -45,13 +45,13 @@ implements SQLTableInterface
 // if regular form
 if(anonymous)
 {
-	env.put(Context.SECURITY_AUTHENTICATION, "none");
-	env.put(Context.SECURITY_PRINCIPAL, "");
+    env.put(Context.SECURITY_AUTHENTICATION, "none");
+    env.put(Context.SECURITY_PRINCIPAL, "");
     env.put(Context.SECURITY_CREDENTIALS, "");
 }
 else
 {
-	String classificationOU = guessUserSearchOU(lowerCaseLogin, ldapActiveMode);
+    String classificationOU = guessUserSearchOU(lowerCaseLogin, ldapActiveMode);
     String ldapAuth = String.format(ldapUserSearch, lowerCaseLogin, classificationOU);
     env.put(Context.SECURITY_AUTHENTICATION, "simple");
     env.put(Context.SECURITY_PRINCIPAL, ldapAuth);
@@ -79,9 +79,9 @@ public static class IgnoreCaseComparatorForString implements Comparator<String>
     @Override
     public int compare(String o1, String o2)
     {
-        if(o1 == null)		return -1;
-        else if(o2 == null)	return 1;
-        else 				return o1.compareToIgnoreCase(o2);
+        if(o1 == null)        return -1;
+        else if(o2 == null)    return 1;
+        else                 return o1.compareToIgnoreCase(o2);
     }
 }
 
@@ -109,7 +109,7 @@ for(int i = 0; i < roots.length ; i++)
     System.out.println("exploring root path ==> " + roots[i]);
     Path currentExploredPath = Paths.get(roots[i].getAbsolutePath());
 }
-		
+        
 // Modern for
 for(Object f : sqlObjset)
 {

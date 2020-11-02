@@ -4,7 +4,7 @@ For a modern Java code formatting style
 ### [Introduction](Introduction.md)
 #### [Rational](Rational.md)
 ##### [Simple constructs](SimpleConstructs.md)
-##### [functions](functions.md)
+##### [functions](Functions.md)
 ##### [switch/case](SwitchCase.md)
 
 
