@@ -26,8 +26,8 @@ Can be put this way (avoid useless indent  - don't have to get excuse for being 
 
 ```java
 public class DualTable 
-extends OracleSpec 
-implements SQLTableInterface
+  extends OracleSpec 
+  implements SQLTableInterface
 {
     public DualTable() 
     {

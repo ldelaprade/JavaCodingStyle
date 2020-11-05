@@ -41,9 +41,9 @@ else
 
 ## Parenthesis
 
-Since java evolution with anonymous class, functions and lambdas, we want to promote parenthesis to be first class block delimiter citizens. This enable much more creative readability options, breaking the current narrowminded opinioned parenthesis style we can see all over enterprise and open source repositories. 
+Since java evolution with anonymous class, functions and lambdas, we want to promote parenthesis to be first class block delimiter citizens. This enable much more creative readability options, breaking the current narrowminded parenthesis style we can see all over enterprise and open source repositories. 
 
-We will defend a different approach which permits formats such as:
+We will promote a different approach which permits clarity first -  such as:
 
 ```java
 if
@@ -58,7 +58,7 @@ if
     JetNotifs.DoVaadinWarnNotif("Try to narrow your search criteria.");
 }
 ```
-and uninhibited function calls... !
+and uninhibited function call styles... !
 
 ```java
 EslResultForClipboard.setValue
@@ -80,4 +80,24 @@ EslResultForClipboard.setValue
         ecs[0].ServiceLevel
     )
 );
+```
+
+## Lines length
+
+Long lines breaking would be made obvious by indenting post-breaks. However, as regular indent are made of 4 spaces - long line breaks will hold 2 spaces only.
+
+
+```java
+// long line version
+public class DualTable extends OracleSpec implements SQLTableInterface
+{
+    ...
+}
+// long line breaked using 2 spaces indent
+public class DualTable 
+  extends OracleSpec 
+  implements SQLTableInterface
+{
+    ...
+}
 ```
