@@ -1,37 +1,46 @@
-# Switch Case
+# Annotations
 
-Switch case deserve a special consideration because it's the most difficult construct to get formatting consensus on. For the switch part, no surprise -  we stick to the if/while braces positions. The cases part has no equivalent on other constructs and readability and simplicity considerations lead us to what follows.
-
-
-### switch/case
+Annotations deserves same level of clarity and should be considered as regular code. Braces and Parenthesis implies same block formatting structures as for regular code.
 
 
 ```java
-// switch/case standard (avoiding useless indent and additional braces)
-switch(commandID)
+@JetMenuGroupConfig
+(
+    ID = "MENU_DASHBOARD", Label = "Data Browsing",    Icon = "dashboard.png",
+    menuItems =
+    {
+        @JetMenuItemConfig
+        (
+            ID = "JET_CMD_EVENTS_MONITORING",  
+            Label = "Events monitoring",
+            Icon = "grid24.png",
+            Description = "Monitoring system events"
+        ),
+    }
+)
+@JetMenuGroupConfig
+(
+    ID = "MENU_OPERATIONS", Label = "Operator tasks",    Icon = "operatorTasks.png",
+    menuItems =
+    {
+        @JetMenuItemConfig
+        (
+            ID = "JET_CMD_OMU_EVENT_ALERT",
+            Label = "Event/alert infos",
+            Icon = "led-square-grey-25.png",
+            Description = "Event/alert information"
+        ),
+        @JetMenuItemConfig
+        (
+            ID = "JET_CMD_OMU_ACTIVE_TABLES",
+            Label = "Active tables mngmnt",
+            Icon = "led-square-grey-25.png",
+            Description = "Active tables and hung alerts management"
+        ),
+    }
+)
+public class JetMenuEngine
 {
-    case "JET_CMD_OMU_CONFIG":
-    JetOmuConfigurationUI wizCfg = new JetOmuConfigurationUI();
-    wizCfg.ShowPopupWizard("Jet Configuration settings Wizard");
-    break;
-
-    case "JET_CMD_HIST_CONFIG":
-    JetOmuHistoryUI wizHistCfg = new JetOmuHistoryUI();
-    wizHistCfg.ShowPopupWizard("Jet History maintenance Wizard");
-    break;
-
-    default:
-    break;
-}
-
-// Avoid this confusing style with useless braces. 
-// 'break' inside or outside braces would mean the same...
-case "JET_CMD_OMU_CONFIG":
-{
-    JetOmuConfigurationUI wizCfg = new JetOmuConfigurationUI();
-    wizCfg.ShowPopupWizard("Jet Configuration settings Wizard");
-    break; // break here ?
-}
-break; // break here ?
-    
+    ...
+}  
 ```
