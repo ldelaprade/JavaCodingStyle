@@ -42,7 +42,7 @@ public class DualTable
 
 
 ```java
-// if regular form
+// 'if' regular form
 if(anonymous)
 {
     env.put(Context.SECURITY_AUTHENTICATION, "none");
@@ -58,7 +58,7 @@ else
     env.put(Context.SECURITY_CREDENTIALS, password);
 }
 
-// if semi compact form
+// 'if' semi compact form
 public static boolean isEuristicalyTrue(Object value)
 {
     if(value != null)
@@ -73,23 +73,23 @@ public static boolean isEuristicalyTrue(Object value)
     return false;
 }
 
-// if ultra compact form for trivial situations
+// 'if' ultra compact form for trivial situations
 public static class IgnoreCaseComparatorForString implements Comparator<String>
 {
     @Override
     public int compare(String o1, String o2)
     {
-        if(o1 == null)        return -1;
-        else if(o2 == null)    return 1;
-        else                 return o1.compareToIgnoreCase(o2);
+        if(o1 == null)      return -1;
+        else if(o2 == null) return 1;
+        else                return o1.compareToIgnoreCase(o2);
     }
 }
 
-// do while format
+// 'do while' format
 do
 {
     JetSQLColumnsInterface f = orderedFields.get(i);
-    if( f != null )
+    if(f != null)
         ProcessOneItem(orderedFields.get(i));
 }
 while(++i < iSize);

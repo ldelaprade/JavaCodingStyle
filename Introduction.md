@@ -54,7 +54,8 @@ return new MyClass()
     }
 };
 ```
-And will also allow its equivalent compact format:
+And will also allow its equivalent compact format
+which is still much more readable in terms of catching code structures.
 
 ```java
 return new MyClass() 
@@ -71,4 +72,4 @@ return new MyClass()
     }
 };
 ```
-which is still much more readable in terms of catching code structures at first glance.
+

@@ -1,4 +1,7 @@
+
+
 # Functions
+
 Function definitions and calls became wide and complex situation since we got exotic syntaxes for anonymous, lambdas etcetera... Formatting habits did not evolve accordingly and made most late java code rather difficult to grasp.
 
 
@@ -66,15 +69,15 @@ DebugLogAndPrint
 );
 
 // lambdas
-// ==> Let's avoid this
+// ==> Let's avoid this commonly seen style
 shutdownManager.addShutdownHook(() -> {
     producer.close();
     // give a bit of time to stop..
     Thread.sleep(200);
 });
 
-// ==> Try this much clearer version instead
-// parenthesis are first class blocks delimiters
+// ==> Try this much clearer version instead.
+// Remember that parenthesis are first class blocks delimiters.
 // closing a block with '});' becomes unacceptable.
 shutdownManager.addShutdownHook
 (

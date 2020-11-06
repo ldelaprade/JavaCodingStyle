@@ -15,7 +15,8 @@ ELSE
 END-IF    
 ```
 
-Considering 'THEN' keyword the opening block delimiter, then, being matched with the newly introduced '{', no wonder it was first transposed to such C styling:
+Considering 'THEN' keyword the opening block delimiter. 'THEN', being matched with the newly introduced '{' - no wonder it was first transposed to such C styling:
+
 ```c
 if(a<b) {
    DISPLAY("COMBINED CONDITION");
@@ -25,9 +26,9 @@ if(a<b) {
 ```
 
 This missed the fact that older languages blocks start/end visual matching was based on words only. The above COBOL sample have the 'IF' aligned with 'ELSE' and 'END-IF'.
-The corresponding C translation is messing it all. Mixing the new C blocks delimiters typographic signs with the 'if', 'else' misused as delimiters here. The eye will have difficulties catching block structures.
+The corresponding C translation is messing it all. It is mixing the new C blocks delimiters typographic signs with the 'if'/'else' delimiters. Hence the difficulties for catching block structures immediately.
 
-That's why - for clear coding and obvious reading -  proper open/close delimiters alignment will be a better C translation of the above COBOL styling.
+That's why - proper open/close '{' and '}' delimiters horizontal alignment will be a better C translation of the above COBOL styling.
 ```c
 if(a<b) 
 {
@@ -41,9 +42,9 @@ else
 
 ## Parenthesis
 
-Since java evolution with anonymous class, functions and lambdas, we want to promote parenthesis to be first class block delimiter citizens. This enable much more creative readability options, breaking the current narrowminded parenthesis style we can see all over enterprise and open source repositories. 
+Since java evolution with anonymous class, functions and lambdas, parenthesis get promoted to be first class block delimiter citizens. This enable much more creative readability options, breaking the current narrowminded parenthesis style we can see all over enterprise and open source repositories. 
 
-We will promote a different approach which permits clarity first -  such as:
+Clarity first:
 
 ```java
 if
