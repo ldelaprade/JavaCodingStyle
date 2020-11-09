@@ -59,7 +59,7 @@ if
     JetNotifs.DoVaadinWarnNotif("Try to narrow your search criteria.");
 }
 ```
-and uninhibited function call styles... !
+and disinhibited function call styles... !
 
 ```java
 EslResultForClipboard.setValue

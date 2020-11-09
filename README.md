@@ -1,8 +1,8 @@
 [Home](https://ldelaprade.github.io/JavaCodingStyle/)
 
-# A new Java Coding Style Manifesto
+# For a new Java Coding Style Manifesto
 
-For a modern dehinhibited Java code formatting style
+For a modern disinhibited Java code formatting style
 
 ### [Introduction](Introduction.md)
 #### [Rational](Rational.md)
