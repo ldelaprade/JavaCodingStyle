@@ -58,7 +58,7 @@ public void setLongitude(double longitude)
 TimeZone tz = calendar.getTimeZone();
 
 // Embedded long call with enhanced readability 
-DebugLogAndPrint
+LogMessage
 (
     String.format
     (
@@ -69,7 +69,7 @@ DebugLogAndPrint
 );
 
 // lambdas
-// ==> Let's avoid this commonly seen style
+// ==> Let's avoid this commonly seen destructured style
 shutdownManager.addShutdownHook(() -> {
     producer.close();
     // give a bit of time to stop..
@@ -78,7 +78,8 @@ shutdownManager.addShutdownHook(() -> {
 
 // ==> Try this much clearer version instead.
 // Remember that parenthesis are first class blocks delimiters.
-// closing a block with '});' becomes unacceptable.
+// closing a block with '});' becomes unacceptable 
+// except for inline versions where everything fit in 1 single line.
 shutdownManager.addShutdownHook
 (
     () -> 
