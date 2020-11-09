@@ -28,7 +28,7 @@ if(a<b) {
 This missed the fact that older languages blocks start/end visual matching was based on words only. The above COBOL sample have the 'IF' aligned with 'ELSE' and 'END-IF'.
 The corresponding C translation is messing it all. It is mixing the new C blocks delimiters typographic signs with the 'if'/'else' delimiters. Hence the difficulties for catching block structures immediately.
 
-That's why - proper open/close '{' and '}' delimiters horizontal alignment will be a better C translation of the above COBOL styling.
+That's why - proper open/close '{' and '}' delimiters horizontal alignment stays  a better C  styling translation to  the above COBOL.
 ```c
 if(a<b) 
 {
@@ -42,9 +42,9 @@ else
 
 ## Parenthesis
 
-Since java evolution with anonymous class, functions and lambdas, parenthesis get promoted to be first class block delimiter citizens. This enable much more creative readability options, breaking the current narrowminded parenthesis style we can see all over enterprise and open source repositories. 
+Since java evolution with anonymous class, functions and lambdas, we defend that parenthesis get promoted to 'first class block delimiter citizens'. This enable much more creative readability options. 
 
-Clarity first:
+Clarity first !
 
 ```java
 if
@@ -85,7 +85,7 @@ EslResultForClipboard.setValue
 
 ## Lines length
 
-Long lines breaking would be made obvious by indenting post-breaks. However, as regular indent are made of 4 spaces - long line breaks will hold 2 spaces only.
+Long lines breaking made obvious with post-breaks indents. However, as block indents would require 4 spaces - long line breaks could need 2 spaces only.
 
 
 ```java

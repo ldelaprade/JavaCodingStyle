@@ -10,7 +10,7 @@ public interface SQLTableInterface
     ...
 }
 ```
-Breaking long lines need no indentations. For example:
+Long line for class declaration.
 
 ```java
 public class DualTable extends OracleSpec implements SQLTableInterface
@@ -22,7 +22,7 @@ public class DualTable extends OracleSpec implements SQLTableInterface
     ...
 }
 ```
-Can be put this way (avoid useless indent  - don't have to get excuse for being this long line - spreading right or down should be considered equivalent):
+Can be put this way (breaking long line with indent=2 spaces)
 
 ```java
 public class DualTable 
@@ -58,7 +58,7 @@ else
     env.put(Context.SECURITY_CREDENTIALS, password);
 }
 
-// 'if' semi compact form
+// 'if' semi compact form (no braces)
 public static boolean isEuristicalyTrue(Object value)
 {
     if(value != null)
