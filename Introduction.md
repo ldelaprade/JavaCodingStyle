@@ -1,6 +1,6 @@
 # Introduction
 For a modern Java code formatting style
-Let's be clear, this manifesto is for advocating a Java formatting style opposing K&R C inventors advocated by [google](https://google.github.io/styleguide/javaguide.html).
+This manifesto is promoting a modern Java formatting style contrasting with K&R C oldish style applied to Java and advocated by most java open source tenants including  [google](https://google.github.io/styleguide/javaguide.html).
 
 When comparing to the existing languages at that time (PASCAL, COBOL, ADA...), K&R did not fully took advantage of their newly introduced typographic block delimiters: '{' and '}'.
 
