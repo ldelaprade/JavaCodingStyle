@@ -12,16 +12,3 @@ For a modern disinhibited Java code formatting style
 ##### [Annotations](Annotations.md)
 
 
-
-TODO:
-
-
-- DSL files, e.g. JenkinsFile
-- the JavaScript problem
-
-- <u>''?' test operator</u>
-
-ZoneId zid = tz == null ? ZoneId.systemDefault() : tz2.toZoneId();
-
-- <u>structures/arrays/enums</u>
-
