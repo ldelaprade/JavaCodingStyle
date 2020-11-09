@@ -87,7 +87,7 @@ shutdownManager.addShutdownHook
         producer.close();
         // give a bit of time to stop..
         Thread.sleep(200);
-	}
+    }
 );
 
 ```

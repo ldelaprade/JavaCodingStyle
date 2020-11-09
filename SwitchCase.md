@@ -1,6 +1,8 @@
 # Switch Case
 
-Switch case deserve a special consideration because it's the most difficult construct to get formatting consensus on. For the switch part, no surprise -  we stick to the if/while braces positions. The cases part has no equivalent on other constructs and readability and simplicity considerations lead us to what follows.
+Switch case deserve a special consideration. For the switch part, no surprise -  we stick to the if/while braces positions. The cases part looks like is the remaining part of our good old GOTO tag labels (which is deprecated but still available in C !). 
+
+Here's what we think is the simplest and best approach to adopt.
 
 
 ### switch/case
@@ -24,7 +26,7 @@ switch(commandID)
     break;
 }
 
-// Avoid this confusing style with useless braces. 
+// Avoid this confusing style with useless block braces delimiters. 
 // 'break' inside or outside braces would mean the same...
 case "JET_CMD_OMU_CONFIG":
 {
