@@ -1,4 +1,4 @@
-[Home](https://ldelaprade.github.io/JavaCodingStyle/)
+[Home (on github.io)](https://ldelaprade.github.io/JavaCodingStyle/)
 
 # For a new Java Coding Style Manifesto
 
