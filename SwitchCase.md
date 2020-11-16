@@ -1,6 +1,6 @@
 # Switch Case (and ternary operator)
 
-Switch/case and ternary operator ('?') surely deserve special consideration. Both are standing alone special coding structures and cause the most diverse formatting styles ever found with other structures. 
+Switch/case and ternary operator ('?') surely deserve special consideration. Both are particular coding structures. This causes wide range of different coding styles ever found compared to simpler structures. 
 
 ### switch/case
 
@@ -63,7 +63,9 @@ setValue
     )
 );
 
-// Where most developers wouldn't dare and would instead use a switch/case - here is the 'smart style'. It makes things even clearer and shorter than a switch/case: 
+// Where most developers wouldn't dare and would instead use a switch/case, 
+// here is the 'smart style'.
+// It makes things even clearer and shorter than a switch/case: 
 severityText=
 (
     severity==0 ? "normal"    :
