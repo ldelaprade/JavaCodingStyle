@@ -36,7 +36,6 @@ case "JET_CMD_OMU_CONFIG":
     break; // break here ?
 }
 break; // break here ?
-    
 ```
 
 ### ternary operator
@@ -47,32 +46,32 @@ Good formatting options for the ternary operator will greatly help readability -
 ```java
 // Parethesing - though optional - helps visual logic
 AddLabelField((isESL ? "Esl customer: " : (isOML ? "OM Group: " : "Any: "));
-              
+
 // Parethesing + multilines structures helps even more
 setValue
 (
-	isESL ?
-		"Further nodes filtering (optional)"
-		:
-		(
-			isOML ?
-				"Click next for OM nodes"
-				:
-				"Click next to load from file."
-		)
+    isESL ?
+    (
+        "Further nodes filtering (optional)"
+    )
+    :
+    (
+        isOML ?
+        "Click next for OM nodes"
+        :
+        "Click next to load from file."
+    )
 );
 
 // Where most developers wouldn't dare and would instead use a switch/case - here is the 'smart style'. It makes things even clearer and shorter than a switch/case: 
 severityText=
 (
-	severity==0 ? "normal"    :
-	severity==1 ? "warning"   :
-	severity==2 ? "minor"     :
-	severity==3 ? "major"     :
-	severity==4 ? "critical"  : "unknown"
+    severity==0 ? "normal"    :
+    severity==1 ? "warning"   :
+    severity==2 ? "minor"     :
+    severity==3 ? "major"     :
+    severity==4 ? "critical"  : "unknown"
 );
-            
-              
 ```
 
 ### 
