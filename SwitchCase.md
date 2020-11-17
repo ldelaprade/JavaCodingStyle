@@ -75,6 +75,18 @@ severityText=
     severity==4 ? "critical"  : "unknown"
 );
 ```
-
-### 
+An Oracle SQL DECODE code would look very similar...
+```SQL
+SELECT
+    DECODE
+    (
+        STATUS,
+        0     ,    'Processed',
+        1     ,    'Added'    ,
+        2     ,    'Deleted'  ,
+        3     ,    'Updated'  , 'Invalid'
+    )
+    AS STATUS_TXT
+FROM MY_TABLE
+```
 

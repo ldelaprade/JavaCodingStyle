@@ -2,7 +2,8 @@
 TODO:
 
 
-- DSL files, e.g. JenkinsFile
+- DSL files, e.g. JenkinsFile, nginx config
+
 - the JavaScript problem
 
 

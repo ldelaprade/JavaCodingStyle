@@ -61,7 +61,7 @@ else
 // 'if' semi compact form (no braces)
 public static boolean isEuristicalyTrue(Object value)
 {
-    if(value != null)
+    if(value!=null)
     {
         if(value.getClass().equals(Boolean.class))
             return safeCast(value, Boolean.TYPE);
@@ -79,9 +79,9 @@ public static class IgnoreCaseComparatorForString implements Comparator<String>
     @Override
     public int compare(String o1, String o2)
     {
-        if(o1 == null)      return -1;
-        else if(o2 == null) return 1;
-        else                return o1.compareToIgnoreCase(o2);
+        if(o1==null)      return -1;
+        else if(o2==null) return 1;
+        else              return o1.compareToIgnoreCase(o2);
     }
 }
 
@@ -89,10 +89,10 @@ public static class IgnoreCaseComparatorForString implements Comparator<String>
 do
 {
     JetSQLColumnsInterface f = orderedFields.get(i);
-    if(f != null)
+    if(f!=null)
         ProcessOneItem(orderedFields.get(i));
 }
-while(++i < iSize);
+while(++i<iSize);
 
 // while format
 while(result.hasNext())
@@ -104,14 +104,14 @@ while(result.hasNext())
 }
 
 // Classic for
-for(int i = 0; i < roots.length ; i++)
+for(int i = 0; i<roots.length; i++)
 {
     System.out.println("exploring root path ==> " + roots[i]);
     Path currentExploredPath = Paths.get(roots[i].getAbsolutePath());
 }
         
 // Modern for
-for(Object f : sqlObjset)
+for(Object f: sqlObjset)
 {
     int indexPosition = ((JetSQLColumnsInterface)f).getSelectFieldPosition();
     maxIndex = Math.max(indexPosition, maxIndex);
@@ -140,12 +140,5 @@ if(!processWasStarted)
         cleanExit();
     }
 }
-
-```
-
-
-```java
-
-
 
 ```
